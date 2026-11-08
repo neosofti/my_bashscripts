@@ -1,1 +1,1 @@
-My Bash-Scripts for Linux 
+Bash-Scripts for Linux 

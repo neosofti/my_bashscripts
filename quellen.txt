@@ -1,0 +1,17 @@
+# Liste der Quellverzeichnisse
+/home/neo/Applications
+/home/neo/Bilder
+/home/neo/bin
+#/home/neo/Desktop
+/home/neo/Dokumente
+# /home/neo/Downloads
+/home/neo/Entwicklung
+/home/neo/Musik
+/home/neo/Öffentlich
+/home/neo/Schreibtisch
+/home/neo/Software
+/home/neo/Tresor
+/home/neo/UniHagen
+/home/neo/Videos
+/home/neo/VirtualMs
+/home/neo/Vorlagen
