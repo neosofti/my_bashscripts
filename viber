@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# Author: Milen Velikov <root@neosofti.org>
+#
+#!/bin/bash
+
+# Methode A: Wenn das AppImage an einem festen Pfad liegt
+APP_PFAD="$HOME/Applications/viber.AppImage"
+
+# Methode B (alternativ): Wenn das AppImage im selben Ordner wie dieses Skript liegt
+# SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# APP_PFAD="$SCRIPT_DIR/meine-app.AppImage"
+
+# Prüfen, ob die Datei existiert
+if [ ! -f "$APP_PFAD" ]; then
+    echo "Fehler: AppImage nicht gefunden unter $APP_PFAD" >&2
+    exit 1
+fi
+
+echo "Starte AppImage..."
+
+# Das AppImage im Hintergrund starten (&) und die Ausgabe entkoppeln,
+# damit das Terminal nicht blockiert wird (optional)
+"$APP_PFAD" &
+
+# Alternativ (ohne '&'), wenn das Skript warten soll, bis die App geschlossen wird:
+# "$APP_PFAD"
